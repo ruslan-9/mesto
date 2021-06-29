@@ -1,0 +1,16 @@
+.profile__title-edit {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 390px) {
+    .profile__title-edit {
+        max-width: 282px;
+        margin: 0 0 14px;
+        font-size: 27px;
+        line-height: 33px;
+        text-align: center;
+    }
+}
