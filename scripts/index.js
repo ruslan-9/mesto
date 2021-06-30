@@ -7,10 +7,15 @@ const formElement = document.querySelector('.popup__form')
 const inputName = formElement.querySelector('.popup__input_name')
 const inputProfession = formElement.querySelector('.popup__input_profession')
 
-function togglePopupVisibility() {
-    popupElement.classList.toggle('popup_is-opened');
+
+function editButton() {
     inputName.value = profileName.textContent
     inputProfession.value = profileProfession.textContent
+    togglePopupVisibility()
+}
+
+function togglePopupVisibility() {
+    popupElement.classList.toggle('popup_is-opened');
 }
 
 function profileContent(evt) {
@@ -20,6 +25,6 @@ function profileContent(evt) {
     togglePopupVisibility()
 }
 
-popupEditButtonElement.addEventListener('click', togglePopupVisibility)
+popupEditButtonElement.addEventListener('click', editButton)
 popupCloseButtonElement.addEventListener('click', togglePopupVisibility)
 formElement.addEventListener('submit', profileContent);
