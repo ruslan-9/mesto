@@ -10,9 +10,9 @@
     row-gap: 20px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
     .cards {
-        max-width: 600px;
+        justify-content: center;
     }
 }
 

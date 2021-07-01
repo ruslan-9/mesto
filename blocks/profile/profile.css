@@ -5,13 +5,7 @@
     flex-direction: row;
 }
 
-@media screen and (max-width: 800px) {
-    .profile {
-        max-width: 600px;
-    }
-}
-
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 700px) {
     .profile {
         margin: 42px auto 0;
         max-width: 282px;
